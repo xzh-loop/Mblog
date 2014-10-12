@@ -55,8 +55,16 @@ title: 我的blog
 <div class="w980s">
 	<div class="box w250 h360 fl">
 		<div class="index-title">
-			<h1>推荐作品</h1>
+			<h1>最近文章</h1>
 		</div>
+		<ul>
+			{% for post in site.posts %}
+			<li>
+				<span class="time">{{ post.date | date_to_string }}</span>
+			 	<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+			 </li>
+			{% endfor %}
+		</ul>
 	</div>
 	<div class="box w455 h360 fl">
 		
@@ -65,13 +73,3 @@ title: 我的blog
 		
 	</div>
 </div>
-
-
-
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
-{% for post in site.posts %}
-	<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
