@@ -2,6 +2,73 @@
 layout: default
 title: 我的blog
 ---
+<div id="top-bar">
+	<div class="container clearfix">
+		<div class="logo"></div>
+		<dl class="nav">
+			<dt>导航</dt>
+			<dd><div>活动</div></dd>
+			<dd><div>作品</div></dd>
+			<dd><div>曲谱</div></dd>
+			<dd><div>教程</div></dd>
+			<dd><div>百科</div></dd>
+			<dd><div>博物志</div></dd>
+		</dl>
+		<div class="contact-me">联系我~</div>
+	</div>
+</div>
+
+<div id="banner">
+	<div class="wraper clearfix">
+		<ul class="w0">
+			<li><img src="image/banner_1.jpg"></li>
+			<li><img src="image/banner_2.jpg"></li>
+			<li><img src="image/banner_3.jpg"></li>
+			<li><img src="image/banner_4.jpg"></li>
+			<li><img src="image/banner_5.jpg"></li>
+			<li><img src="image/banner_6.jpg"></li>
+		</ul>
+		<div class="btn">
+			<span class="focus"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<script>
+			$("span", ".btn").hover(function(){
+				var index = $(this).index();
+				$("span.focus", ".btn").removeClass("focus");
+				$(this).addClass("focus");
+				$("ul", "#banner .wraper").attr("class","w"+index);
+			});
+			window.setInterval(function(){
+				var index = $("span.focus", ".btn").index()+1;
+				(index>5) && (index=0);
+				$("span.focus", ".btn").removeClass("focus");
+				$("span", ".btn").eq(index).addClass("focus");
+				$("ul", "#banner .wraper").attr("class","w"+index);
+			}, 5000)
+		</script>
+	</div>
+</div>
+
+<nav>
+	<div class="wraper">
+		<ul class="normal">
+			<li>
+				<a href="">
+					<span class="navico navico-1"></span>
+					<span class="word">首页</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+
+
 <h2>{{ page.title }}</h2>
 <p>最新文章</p>
 <ul>
