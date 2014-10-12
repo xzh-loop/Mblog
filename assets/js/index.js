@@ -12,5 +12,7 @@ window.onload = function(){
 		$("span", ".btn").eq(index).addClass("focus");
 		$("ul", "#banner .wraper").attr("class","w"+index);
 	}, 5000);
-	$(".post-date",".w980s .box").text($(this).text().slice(5,10));
+	$(".post-date",".w980s .box").each(function(){
+		$(this).text($(this).text().slice(5,10));
+	});
 }
