@@ -50,5 +50,7 @@ nav .wraper .normal li a .word {width:42px;height:44px;line-height:44px;float:le
 .w980s .box.fr {float:right;}
 .w980s .box .index-title {height:35px;line-height:35px;}
 .w980s .box .index-title h1 {font-family:"微软雅黑";font-size:14px;margin:0;margin-left:10px;color:#313131;}
-.w980s .box ul {height:230px;padding:0 10px;background:url("../img/date-line.png") no-repeat 45px 8px;list-style-type:none;}
+.w980s .box ul {height:230px;padding:0 10px;background:url("../img/date-line.png") no-repeat 55px 8px;list-style-type:none;}
 .w980s .box ul li .post-date {width:44px;height:18px;margin-right:11px;float:left;line-height:17px;overflow:hidden;margin-top:4px;font-size:12px;text-indent:.3em;background:url("../img/index-ico.png") no-repeat 0 -1px;}
+.w980s .box ul li a {height:25px;line-height:25px;float:left;text-overflow:ellipsis;width:185px;text-decoration:none;color:#313131;font-size:14px;}
+.w980s .box ul li a:hover {opacity:0.7;}
