@@ -36,21 +36,6 @@ title: 我的blog
 			<span></span>
 			<span></span>
 		</div>
-		<script>
-			$("span", ".btn").hover(function(){
-				var index = $(this).index();
-				$("span.focus", ".btn").removeClass("focus");
-				$(this).addClass("focus");
-				$("ul", "#banner .wraper").attr("class","w"+index);
-			});
-			window.setInterval(function(){
-				var index = $("span.focus", ".btn").index()+1;
-				(index>5) && (index=0);
-				$("span.focus", ".btn").removeClass("focus");
-				$("span", ".btn").eq(index).addClass("focus");
-				$("ul", "#banner .wraper").attr("class","w"+index);
-			}, 5000)
-		</script>
 	</div>
 </div>
 
@@ -66,6 +51,20 @@ title: 我的blog
 		</ul>
 	</div>
 </nav>
+
+<div class="w980s">
+	<div class="box w250 h360 fl">
+		<div class="index-title">
+			<h1>推荐作品</h1>
+		</div>
+	</div>
+	<div class="box w455 h360 fl">
+		
+	</div>
+	<div class="box w250 h360 fr">
+		
+	</div>
+</div>
 
 
 

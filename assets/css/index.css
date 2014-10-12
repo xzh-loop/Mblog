@@ -40,3 +40,13 @@ nav .wraper .normal li a {padding-left:10px;float:left;height:44px;margin-top:3p
 nav .wraper .normal li a .navico {width:30px;height:30px;display:inline-block;margin-top:7px;background:url("../img/nav-ico.png");}
 nav .wraper .normal li a .navico.navico-1 {background-position:0 0;}
 nav .wraper .normal li a .word {width:42px;height:44px;line-height:44px;float:left;}
+
+.w980s {padding:0 110px;margin:0 auto;width:980px;}
+.w980s .box {overflow:hidden;border-radius:5px;box-shadow:0 0 7px rgba(3,3,3,0.15);}
+.w980s .box.w250 {width:260px;}
+.w980s .box.w455 {width:440px;margin-left:7px;}
+.w980s .box.h360 {height:360px;}
+.w980s .box.fl {float:left;}
+.w980s .box.fr {float:right;}
+.w980s .box .index-title {height:35px;line-height:35px;}
+.w980s .box .index-title h1 {font-family:"微软雅黑";font-size:14px;margin-left:10px;color:#313131;}
