@@ -60,7 +60,7 @@ title: 我的blog
 		<ul>
 			{% for post in site.posts %}
 			<li>
-				<span class="time">{{ post.date | date_to_string }}</span>
+				<span class="post-date">{{ post.date | date_to_xmlschema }}</span>
 			 	<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 			 </li>
 			{% endfor %}

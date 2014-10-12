@@ -1,5 +1,5 @@
 window.onload = function(){
-	$("span", ".btn").hover(function(){
+	$("span",".btn").hover(function(){
 		var index = $(this).index();
 		$("span.focus", ".btn").removeClass("focus");
 		$(this).addClass("focus");
@@ -12,4 +12,5 @@ window.onload = function(){
 		$("span", ".btn").eq(index).addClass("focus");
 		$("ul", "#banner .wraper").attr("class","w"+index);
 	}, 5000);
+	$(".post-date",".w980s .box").text($(this).text().slice(5,10));
 }
