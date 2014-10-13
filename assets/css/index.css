@@ -1,8 +1,4 @@
-﻿/*common style*/
-body {margin:0;padding:0;font: 12px/1.125 "微软雅黑",Arial,Helvetica,sans-serif;background:#f3f3f3;}
-.clearfix:after {content:".";visibility:hidden;display:block;height:0;clear:both;}
-
-#top-bar {background:#424242;height:40px;}
+﻿#top-bar {background:#424242;height:40px;}
 #top-bar .container {width:980px;height:40px;margin:0 auto;color:#fff;}
 #top-bar .container .logo {color:#f29b22;float:left;}
 #top-bar .container .nav {float:left;margin:0;height:40px;font-weight:100;width:80px;text-align:center;cursor:pointer;}
