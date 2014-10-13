@@ -5,5 +5,4 @@ body {margin:0;padding:0;font: 12px/1.125 "微软雅黑",Arial,Helvetica,sans-se
 .footer {padding:0 110px;width:980px;margin:0 auto;}
 .footer .content {width:980px;}
 .footer .content .box {width:320px;}
-.footer .content .box:first-child {}
 .footer .content .box h3 {border-bottom:5px solid #f29b22;}
